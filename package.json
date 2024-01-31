@@ -1,0 +1,16 @@
+{
+  "scripts":{
+    "start":"cd server && node server.ts",
+    "dev":"concurrently \"cd server && npm run watch\" \"cd client && vite dev\"",
+    "install":"cd server && npm i && cd ../client && npm i",
+    "build":"cd client && npm run build"},
+  "dependencies":{
+    "concurrently":"^8.2.2"
+  },
+  "devDependencies":{
+    "@types/express":"^4.17.21",
+    "@types/node":"^20.11.13",
+    "nodemon":"^3.0.3",
+    "typescript":"^5.3.3"
+  }
+}
